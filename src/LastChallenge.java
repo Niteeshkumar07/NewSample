@@ -6,14 +6,14 @@ public class LastChallenge {
 //        int n = arr.length - 1; // Corrected
         int currmax = Integer.MIN_VALUE; // Java equivalent of INT_MIN
 
-        for(int i = 0; i < arr.length; i++) { // Corrected loop condition
-            currmax = Math.max(arr[i], currmax); // Corrected usage of max
+        for (int k : arr) { // Corrected loop condition
+            currmax = Math.max(k, currmax); // Corrected usage of max
         }
 
         int secondmax =Integer.MIN_VALUE;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] != currmax){
-                secondmax = Math.max(arr[i],secondmax);
+        for (int j : arr) {
+            if (j != currmax) {
+                secondmax = Math.max(j, secondmax);
             }
         }
 
